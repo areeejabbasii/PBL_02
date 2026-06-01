@@ -1,0 +1,56 @@
+========================================
+  ONLINE EXAM SYSTEM - HOW TO RUN
+========================================
+
+FOLDER:
+  c:\Users\HP\OneDrive\Desktop\oop
+
+----------------------------------------
+FIRST TIME ONLY (database)
+----------------------------------------
+
+1) SSMS open karein, connect: localhost\SQLEXPRESS
+2) database.sql file run karein (F5)
+3) setup-sql.bat par RIGHT-CLICK -> Run as administrator
+   (ya Admin PowerShell: powershell -ExecutionPolicy Bypass -File .\scripts\enable-sql-server.ps1)
+
+4) Agar lib\mssql-jdbc-12.8.1.jre11.jar missing ho:
+   PowerShell: .\download-jdbc.ps1
+
+Detail guide: SQL_SERVER_CONNECTION_GUIDE.md
+
+----------------------------------------
+EVERY TIME (run app)
+----------------------------------------
+
+Option A - Double-click:
+  run.bat
+
+Option B - Command Prompt:
+  cd c:\Users\HP\OneDrive\Desktop\oop
+  run.bat
+
+Option C - PowerShell:
+  cd c:\Users\HP\OneDrive\Desktop\oop
+  .\run.ps1
+
+----------------------------------------
+LOGIN
+----------------------------------------
+
+Register se naya account banain, phir login karein.
+
+Exam: Dashboard -> Take Examination
+
+----------------------------------------
+FILES
+----------------------------------------
+
+  run.bat              -> App chalao (Windows)
+  run.ps1              -> App chalao (PowerShell)
+  setup-sql.bat        -> SQL Server TCP setup (Admin)
+  download-jdbc.ps1    -> JDBC driver download
+  database.sql         -> Database + questions
+  SQL_SERVER_CONNECTION_GUIDE.md -> Full steps
+
+========================================
